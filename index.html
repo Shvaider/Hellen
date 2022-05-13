@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
 <!--contacts-->
 <section class="section-contacts">
     <div class="contacts__box container">
-        <h2 class="contacts__title">Registration for a free phone consultation on the nuances of English UPE</h2>
-        <p class="contacts__subtitle">Leave a request for participation in a free lesson.
+        <h2 class="contacts__title">Registration for a <span class="contacts__title-slogan">free</span> phone <span class="contacts__title-slogan">consultation</span> on the nuances of English UPE</h2>
+        <p class="contacts__subtitle">Leave a request for participation in a <span class="contacts__subtitle-slogan">free lesson</span>.
             A consultant will contact you and answer your questions</p>
         <form class="contacts__form">
             <ul class="contacts__list">
                 <li class="contacts__item">
                     <label class="connection-field">
-                        <input class="contacts__input" type="text" name="name" placeholder="">
+                        <input class="contacts__input" type="text" name="name" placeholder="Name*">
                     </label>
                 </li>
                 <li class="contacts__item">
                     <label class="connection-field">
-                        <input class="contacts__input" type="tel" name="phone-number">
+                        <input class="contacts__input" type="tel" name="phone-number" placeholder="Phone*">
                     </label>
                 </li>
             </ul>
@@ -33,28 +34,35 @@
 <!--footer-->
 <footer class="footer">
     <div class="footer__section container">
-        <div class="footer__logo">
-            <a href="" class="logo">
-                Hell<svg class="logo__icon"></svg>EN
-                <p><span>hellish</span>english</p>
+        <div class="footer__box">
+            <a href="#" class="footer__logo">
+                Hell<svg class="logo__icon" width="22" height="30">
+                    <use href="../images/sprite.svg#icon-fire"></use>
+                </svg>EN
+                <p class="logo__subtitle"><span class="logo__sibtitle-slogan">hellish </span>english</p>
             </a>
         </div>
-        <div class="footer-nav__contacts">
-            <svg class="footer-mobile__icon">
-                <use href="./images/"></use>
-            </svg>
-            <a class="footer-mobile__link" href="tel:+380000000000" target="_blank" rel="noreferrer noopener">+38 (000)
-                000 00 00</a>
-            <span>|</span>
-            <a class="footer-social__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                <svg class="footer-social__icon">
-                    <use href="./images/"></use>
+        <div class="footer-nav__contacts footer-wrapper">
+            <div class="footer-wrapper__icon">
+                <svg class="footer-mobile__icon">
+                    <use href="./images/phone_icon.svg#icon-Vector-2"></use>
                 </svg>
-            </a>
+            </div>
+            <div class="footer-wrapper__link">
+                <a class="footer-mobile__link current" href="tel:+380000000000" target="_blank" rel="noreferrer noopener">+38 (000)
+                    000 00 00</a>
+            </div>
+            <div class="footer-wrapper__social-link">
+                <a class="footer-social__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                    <svg class="footer-social__icon" width="40px" height="40px">
+                        <use href="./footer/instagram-icon.svg#icon-instagram-1"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
     <div class="footer__row">
-        <p class="footer__text">@ All rights reserved, 2019</p>
+        <p class="footer__text  container">@ All rights reserved, 2019</p>
     </div>
 </footer>
 </body>
